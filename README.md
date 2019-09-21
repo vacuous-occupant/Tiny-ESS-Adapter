@@ -9,10 +9,10 @@ An ESS adapter is a device which modifies your controller inputs, and then feeds
 
 ## 2. Adapter Rules
 Taken from the Ocarina of Time Speedrunning discord: [https://discord.gg/DfjKaQ](https://discord.gg/DfjKaQ)
--Analog signals are mapped only to analog signals.
--Digital signals can be mapped to analog, but not the reverse. 
--The control stick output must be a monotonically increasing sequence. In other words, if one input value is greater than or equal to another input value, their respective outputs must share that relationship. This preserves the ordering of deadzone → ESS → walking → running.
--Minimum input must be mapped to minimum output. In other words, neutral must map to neutral.
--The adapter may not add or remove functionality to the game. Turbo, macros, and mapping multiple input sources to movement are examples of added functionality. Mapping the entire stick to ESS is an example of loss of functionality.  Link must retain all of his normally accessible actions and movement options.
+* Analog signals are mapped only to analog signals.
+* Digital signals can be mapped to analog, but not the reverse. 
+* The control stick output must be a monotonically increasing sequence. In other words, if one input value is greater than or equal to another input value, their respective outputs must share that relationship. This preserves the ordering of deadzone → ESS → walking → running.
+* Minimum input must be mapped to minimum output. In other words, neutral must map to neutral.
+* The adapter may not add or remove functionality to the game. Turbo, macros, and mapping multiple input sources to movement are examples of added functionality. Mapping the entire stick to ESS is an example of loss of functionality.  Link must retain all of his normally accessible actions and movement options.
 
 -to be continued-

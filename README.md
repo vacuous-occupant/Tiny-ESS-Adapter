@@ -39,6 +39,7 @@ As you can see, no matter how far you move your stick toward the northeast notch
 Here's the good news: Every single coordinate you need for a full range of movement in Ocarina of Time falls **within the linear range of VC's remap.**
 The result of this is that every ESS adapter anyone has ever used for this game on this console, has an in-game map that looks somewhat like this:
 ![VC remap](./images/diamond.png)
+
 All this is to say, 1-d remap, 2-d remap, doesn't really seem to matter as far as I can tell.
 
 This repository is a work in progress, more to come.

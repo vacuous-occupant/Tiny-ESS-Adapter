@@ -1,7 +1,7 @@
 # Tiny-ESS-Adapter
 Compact ESS adapter powered by Atmel ATTiny
 
-**Currently for Ocarina of Time on Wii Virtual Console only**
+**For Ocarina of Time on Wii Virtual Console only**
 
 ## 1. Introduction
 Wii Virtual Console (VC) is currently the fastest platform in many categories of Ocarina of Time speedrunning. This is due to version-specific glitches, as well as decreased loading times. There is a critical problem with this: VC actually remaps your analog stick inputs. This drastically increases the difficulty of all variations of the Extended Super Slide (ESS.) It also makes it much more difficult to aim first person items such as the hookshot and the bow.
@@ -22,8 +22,7 @@ However, due to the plastic controller casing, the actual highest attainable val
 ### 2-dimensional Remap
 Since each axis has 256 possible values, there are a total of 65,566 possible coordinates (256x256) on a gamecube controller stick. Though again, due to the controller casing its actually closer to 32,000. A 2D remap changes every point on the 2 dimensional spectrum of coordinates to another set of coordinates. There are some programming tricks to reduce this number by 1/4, but at a minimum you would need a remap table of at least 8,000 modified coordinates programmed on your ESS adapter for a full 2D remap.
 ### 1-dimensional Remap
-A 1D remap reduces this to 128 values. Instead of remapping every point in the spectrum of points, you simply remap every point on the axis. That would be a total of 512 values (256+256), however we can reduce that by 1/4 using the same programming tricks mentioned above.
+A 1D remap reduces this to 128 values. Instead of remapping every point in the spectrum of points, you simply remap the X and Y axes themselves. That would be a total of 512 values (256+256), however we can reduce that by 1/4 using the same programming tricks mentioned above.
 ### Which is better?
-It depends on who you ask, but based on the data I've gathered, I believe they are exactly identical.
-
--to be continued-
+To the best of my knowledge, they are exactly the same. The reason for this is the hard limit on the diagonals set by the Virtual Console remap. Let me explain.
+I plugged an arduino dev board into my Wii without any sort of remapping, and fed every possible set of coordinates into my Wii. I used the GZ practice ROM to display what VC was doing with my inputs, and recorded every output. I then put all of this into a spreadsheet, split up the X and Y data, color coded, and began to analyze what was happening under the hood. What I found is that VC remaps your inputs in a linear fashion up to a certain point.
